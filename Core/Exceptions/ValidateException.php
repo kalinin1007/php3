@@ -2,7 +2,7 @@
 
 namespace Core\Exceptions;
 
-Class ValidateException extends \Exception
+class ValidateException extends \Exception
 {
     public $errors;
 

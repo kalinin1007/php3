@@ -6,3 +6,7 @@
 <?php endforeach;?>
 <hr>
 <a href="<?= ROOT?>/post/add">Add post</a>
+<hr>
+<a href="<?= ROOT?>/user/signin">Log in</a>
+<hr>
+<a href="<?= ROOT?>/user/signup">Register</a>

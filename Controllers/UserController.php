@@ -2,7 +2,7 @@
 
 namespace Controllers;
 
-class AuthController extends BaseController
+class UserController extends BaseController
 {
     public function signin()
     {

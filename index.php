@@ -31,9 +31,9 @@ if (!$_GET['chpu']){
 	$acName = 'add';
 	$id = null;
 
-}elseif(explode('/', $_GET['chpu'])[0] == 'auth'){
+}elseif(explode('/', $_GET['chpu'])[0] == 'user'){
 	$chanks = explode('/', $_GET['chpu']);
-	$cName = 'Auth';
+	$cName = 'User';
 	$acName = $chanks[1];
 	$id = null;
 }else{

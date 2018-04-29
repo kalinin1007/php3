@@ -32,7 +32,7 @@ class PostController extends BaseController
         $id = $this->request->param('id');
        
         $post = $mPost->getById($id);
-        
+        $this->title .= ":: {$post['title']}";
         $this->content = $this->build('post.php', ['post' => $post]);
 
     }
@@ -54,6 +54,7 @@ class PostController extends BaseController
                 }
             
         }else{
+            $this->title .= '::add post';
             $this->content = $this->build('add.php',['errors'=> null]);
         }
         

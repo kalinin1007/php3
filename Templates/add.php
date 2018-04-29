@@ -1,4 +1,4 @@
-<h2>Form</h2>
+<h2>Form add post</h2>
 
 <?php if ($errors): ?>
   <?php foreach ($errors as $key => $val): ?>

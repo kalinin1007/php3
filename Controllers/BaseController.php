@@ -13,7 +13,7 @@ class BaseController
 
     public function __construct(Request $request)
 	{
-		$this->title = 'Php2';
+		$this->title = 'Php3';
         $this->content = '';
 		$this->request = $request;
 	}

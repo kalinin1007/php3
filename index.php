@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 
 mb_internal_encoding('UTF-8');
 
-define('ROOT','/php2');
+define('ROOT','/php3');
 
 session_start();
 
@@ -31,6 +31,11 @@ if (!$_GET['chpu']){
 	$acName = 'add';
 	$id = null;
 
+}elseif(explode('/', $_GET['chpu'])[0] == 'auth'){
+	$chanks = explode('/', $_GET['chpu']);
+	$cName = 'Auth';
+	$acName = $chanks[1];
+	$id = null;
 }else{
 	$chanks = explode('/', $_GET['chpu']);
 	$cName = 'Post';
